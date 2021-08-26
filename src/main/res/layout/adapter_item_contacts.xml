@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_bg"
+        android:background="@drawable/icon_bg_def"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/icon_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_head"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/icon_state"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/icon_state"
+            android:visibility="gone"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_below="@id/icon_head"
+            android:id="@+id/icon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="南尘"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff767e91"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</RelativeLayout>
